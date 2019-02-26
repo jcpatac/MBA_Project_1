@@ -1,0 +1,432 @@
+/*html {
+    scroll-behavior: smooth;
+}*/
+
+body {
+background:#E5E5E5;
+font-family:Roboto, sans-serif;
+color:#353B48;
+overflow-x:hidden;
+padding-bottom:150px;
+}
+
+.navbar {
+align-items:center;
+align-content:center;
+padding-left:6.45vw!important;
+padding-right:6.45vw!important;
+}
+
+.navbar-brand>img {
+width:118px;
+height:45px;
+margin-top:-.3vw;
+}
+
+.nav-item>div {
+text-align:center;
+}
+
+.logo_name>h6 {
+color:#7B1113;
+font-style:normal;
+font-weight:700;
+line-height:normal;
+font-size: 81.3%;
+margin:0;
+}
+
+#college_name {
+/*font-size:12px;*/
+/*font-size: 0.8784773060029283vw;*/
+font-size: 75%;
+letter-spacing:.25em;
+}
+
+.logo_name>hr {
+margin-top:.2vw;
+margin-bottom:.2vw;
+background:#7B1113;
+}
+
+.navbar-text {
+position:absolute;
+right:0;
+width:480px;
+height:37px;
+top:8px;
+margin-right:60px;
+font-style:normal;
+font-weight:700;
+line-height:normal;
+/*font-size:27px;*/
+font-size: 168.7%;
+/*font-size: 1.9765739385065886vw;*/
+color:#7B1113;
+}
+
+.title_bar {
+background:#293452;
+text-align:center;
+vertical-align:middle;
+line-height:6vh;
+min-height:6vh;
+font-style:normal;
+font-weight:700;
+/*font-size:20px;*/
+font-size: 125%;
+/*font-size: 1.9765739385065886vw;*/
+letter-spacing:.07em;
+color:#FFF;
+padding:1.2vh auto auto;
+}
+
+#forSpacing {
+margin-top: 60px;
+}
+
+label {
+    color: #2f3640;
+}
+
+.tab {
+display:none;
+}
+
+#spacingDown {
+    padding-bottom: 30px;
+    color: #7B1113 !important;
+    font-weight: 400;
+}
+
+.reg_form {
+margin-top:9vh;
+margin: 30px 50px;
+min-height:100vh!important;
+padding:40px 100px 40px 100px;
+border: 0px solid #bdc3c7;
+border-radius: 10px;  
+}
+
+input,select {
+margin-left:.5vw!important;
+height: 45px !important;
+transition: all 300ms;
+
+}
+
+.form-control, .form-group .form-control{
+    border: 1px solid #bdc3c7 !important; 
+ }
+
+form {
+padding-right:1.8301610541728vw;
+padding-left:1.8301610541728vw;
+}
+
+.name_label {
+float:right;
+font-style:italic;
+font-size:12px;
+/*font-size: 20%;*/
+/*font-size: 0.8784773060029283vw;*/
+font-weight:600;
+}
+
+.col-md-2,.col-md-4,.col-md-6,.col-md-8,.col-md-12 {
+padding:1px 8px 8px 5px !important;
+}
+
+.col-md-12 {
+padding-bottom:0!important;
+}
+
+.indicators {
+text-align:center;
+margin-top:40px;
+}
+
+.step {
+height:13px;
+width:13px;
+background-color:#CECEC4;
+border:none;
+border-radius:50%;
+display:inline-block;
+opacity:0.5;
+margin:0 5px;
+}
+
+.dot {
+height:2px;
+width:2px;
+background-color:#bbb;
+border:none;
+border-radius:50%;
+display:inline-block;
+opacity:1;
+margin:0 1px 5px;
+}
+
+.step.active {
+opacity:1;
+}
+
+.step.unfinished {
+background-color:#E03C3C;
+}
+
+.step.finish {
+background-color:#79EC1E;
+}
+
+#sticky_div {
+position:sticky;
+top:400px;
+width:100%;
+height:150px;
+}
+
+#check_box {
+position:sticky;
+width:126px;
+height:464px;
+background:#F4F4F4;
+margin-top:70px;
+margin-left:30px;
+}
+
+#wrapper {
+display:flex;
+justify-content:space-between;
+}
+
+#next_btn,#back_btn {
+border-radius:100px;
+background: #7B1113 !important;
+
+transition: all 300ms;
+
+}
+
+#next_btn:hover, #back_btn:hover {
+    transform: scale(1.2);
+}
+
+input:hover {
+    transition: all 300ms;
+    background: #ecf0f1;
+}
+
+#FormControlTextarea3 {
+padding: 10px;
+}
+
+.removeButton {
+    background: transparent !important;
+    border: transparent !important;
+    cursor: pointer;
+}
+
+#informationButton {
+    background: transparent !important;
+    border: transparent !important;
+    cursor: pointer;
+    width: 1px;
+    height: 2px;
+    opacity: 0.7;
+    transition: all 300ms;  
+}
+
+#informationButton:hover {
+    opacity: 0.8;
+    transition: all 300ms;
+}
+
+.fa {
+opacity:0.8;
+}
+
+#next_btn {
+text-align:left;
+background:#293452;
+margin-top:1.4748201438849vh;
+}
+
+#back_btn {
+margin-top:2.8748201438849vh;
+text-align:right;
+background:#7B1113;
+}
+
+.tftable {
+/*font-size:14px;*/
+/*font-size: 20%;*/
+/*font-size: 1.0248901903367496vw;*/
+width:100%;
+table-layout:fixed;
+border-color:#000;
+border-width:1px;
+}
+
+.tftable th {
+/*font-size:14px;*/
+/*font-size: 88%;*/
+font-size: 1.0248901903367496vw;
+background-color:#bdc3c7;
+text-align:center!important;
+font-family:'Open Sans', sans-serif!important;
+color:#000;
+border-color:#000;
+border-style:solid;
+border-width:1px;
+padding:8px;
+}
+
+.tftable td {
+/*font-size:14px;*/
+/*font-size: 89%;*/
+font-size: 1.0248901903367496vw;
+height:34px;
+color:#000;
+text-align:center;
+border-color:#000;
+border-style:solid;
+border-width:1px;
+}
+
+.tftable tr:hover {
+background-color:#f4f4f4;
+}
+
+#prof {
+margin-top:20px;
+}
+
+.page_num {
+color:#000;
+opacity:0.6;
+font-size:13.5px;
+/*font-size: 0.9882869692532943vw;*/
+margin-bottom:10px;
+margin-left:7px;
+}
+
+#from_to {
+background:#bdc3c7!important;
+}
+
+.textarea {
+width:100%;
+padding:10px;
+}
+
+.leisure_label {
+float:left;
+font-style:italic;
+font-size:14px;
+/*font-size: 1.0248901903367496vw;*/
+font-weight:600;
+margin-left:10px;
+}
+
+.form-control,.textarea {
+border-color:#2f3640!important;
+}
+
+#sub-text {
+font-size: 14px;
+margin: -9px 0px 9px 0px;
+}
+
+#tocenter {
+min-height:50px;
+width:100px;
+position:absolute;
+left:0;
+right:0;
+top:0;
+bottom:0;
+margin: 40px auto;
+/*this to solve "the content will not be cut when the window is smaller than the content": */
+max-width:100%;
+max-height:100%;
+overflow:auto;
+}
+
+.checkbox {
+/*line-height:464px;*/
+/*margin: auto;*/
+vertical-align:middle;
+text-align:center;
+}
+
+.scrollbar-black::-webkit-scrollbar-track {
+-webkit-box-shadow:inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color:#F4F4F4;
+border-radius:10px;
+}
+
+.scrollbar-black::-webkit-scrollbar {
+width:12px;
+background-color:#F4F4F4;
+}
+
+.scrollbar-black::-webkit-scrollbar-thumb {
+border-radius:10px;
+-webkit-box-shadow:inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: #bdc3c7;
+}
+
+.thin::-webkit-scrollbar {
+width:6px;
+}
+
+@media (max-width: 1000px){
+.navbar-brand {
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+margin-top:.2vw;
+margin-bottom:.2vw;
+}
+
+.logo_name {
+visibility:hidden;
+}
+
+.navbar-text {
+display:none!important;
+}
+
+#check_box {
+display:none;
+}
+
+#section_one {
+margin:0 0px;
+}
+
+#next_btn,#back_btn {
+width:23.276720351391vw;
+height:5.6187050359712vh;
+margin:10px;
+}
+
+#buttons {
+text-align:center;
+}
+
+#buttons input {
+margin:0 5px;
+}
+}
+
+@media (max-width: 650px){
+#next_btn,#back_btn {
+width:50.276720351391vw;
+height:5.6187050359712vh;
+margin:10px;
+}
+}

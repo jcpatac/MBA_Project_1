@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>MBA - Application</title>
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="stylesheet" type="text/css" href="questionnaire.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+      <!-- Bootstrap core CSS -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" rel="stylesheet">
+  
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <!-- JQuery -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>
+   </head>
+   <body>
+      <!-- HEADER START -->
+      <nav class="navbar navbar-expand-lg">
+         <a href="#" class="navbar-brand">
+         <img id="logo" src="logo.png" alt="Logo">
+         </a>
+         <div class="logo" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <div class="logo_name">
+                     <h6>UNIVERSITY OF THE PHILIPPINES CEBU</h6>
+                     <hr>
+                     <h6 id="college_name">SCHOOL OF MANAGEMENT</h6>
+                  </div>
+               </li>
+            </ul>
+            <span class="navbar-text">
+            Masters of Business Administration
+            </span>
+         </div>
+      </nav>
+      <div class="title_bar sticky-top">
+         <span>APPLICATION FORM</span>
+      </div>
+      <!-- HEADER END -->
+      <main class="content" role="content">
+         <section id="section1">
+            <div id="wrapper" class="row">
+               <!-- FORM STARTS HERE -->
+               <div id="sticky_div" class="col-md-2 text-center" data-slide="prev" href="#section_one">
+                  <button class="btn btn-primary" id="back_btn" onclick="nextPrev(-1)"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+               </div>
+               <div id="section_one" class="container-fluid col-md-8">
+                  <form id="reg_form" class="reg_form">
+                     <!-- START OF TAB 1 -->
+                     <h3 class="text-info " id="spacingDown">Complete the required information.</h3>
+                     <div class="tab active">
+                        <div class="form-row">
+                           <!-- Default input -->
+                           <div class="form-group col-md-4">
+                              <label for="inputLastName">Last Name *</label>
+                              <input type="text" class="form-control" id="inputLastName" placeholder="Last name">
+                           </div>
+                           <!-- Default input -->
+                           <div class="form-group col-md-4">
+                              <label for="inputFirstName">First Name *</label>
+                              <input type="text" class="form-control" id="inputFirstName" placeholder="First name">
+                           </div>
+                           <!-- Default input -->
+                           <div class="form-group col-md-4">
+                              <label for="inputMiddleName">Middle Name *</label>
+                              <input type="text" class="form-control" id="inputMiddleName" placeholder="Middle name">
+                           </div>
+                        </div>
+                        <!-- Grid row -->
+                        <!-- Default input -->
+                        <div class="form-group">
+                           <label for="inputAddress">Citizenship *</label>
+                           <select class="browser-default custom-select">
+                              <option selected>Choose your country</option>
+                              <option value="1">China</option>
+                              <option value="2">South Korea</option>
+                              <option value="3">Japan</option>
+                           </select>
+                        </div>
+                        <!-- Default input -->
+                        <div class="form-group">
+                           <label for="inputPermanentAddress">Permanent Address</label>
+                           <input type="text" class="form-control" id="inputPermanentAddress" placeholder="Complete permanent address">
+                        </div>
+                        <div class="form-group">
+                           <label for="inputPresentMailingAddress">Present Mailing Address</label>
+                           <input type="text" class="form-control" id="inputPresentMailingAddress" placeholder="Complete present address">
+                        </div>
+                        <div class="form-row">
+                           <!-- Default input -->
+                           <div class="form-group col-md-3">
+                              <label for="inputTelephoneNumber">Telephone Number</label>
+                              <input type="text" class="form-control" id="inputTelephoneNumber" placeholder="Telephone number" value="(032) ">
+                           </div>
+                           <!-- Default input -->
+                           <div class="form-group col-md-3">
+                              <label for="inputMobileNumber">Mobile Number</label>
+                              <input type="text" class="form-control" id="inputMobileNumber" placeholder="Mobile number" value="(+63) ">
+                           </div>
+                           <!-- Default input -->
+                           <div class="form-group col-md-6">
+                              <label for="inputEmailAddress">Email Address</label>
+                              <input type="text" class="form-control" id="inputEmailAddress" type="email" placeholder="Email address">
+                           </div>
+                        </div>
+                        <!-- Grid row -->
+                        <div class="form-row">
+                           <!-- Default input -->
+                           <div class="form-group col-md-6">
+                              <label for="inputOccupation">Occupation</label>
+                              <input type="text" class="form-control" id="inputOccupation" placeholder="Occupation">
+                           </div>
+                           <!-- Default input -->
+                           <div class="form-group col-md-6">
+                              <label for="inputInstitutionAffiliation">Institution Affiliation</label>
+                              <input type="text" class="form-control" id="inputInstitutionAffiliation" placeholder="Institution affiliation">
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <!-- Default input -->
+                           <div class="form-group col-md-4">
+                              <label for="inputOccupation">Civil Status</label>
+                              <!-- Group of default radios - option 1 -->
+                              <div class="custom-control custom-radio">
+                                 <input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">
+                                 <label class="custom-control-label" for="defaultGroupExample1">Single</label>
+                              </div>
+                              <!-- Group of default radios - option 2 -->
+                              <div class="custom-control custom-radio">
+                                 <input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios">
+                                 <label class="custom-control-label" for="defaultGroupExample2">Married</label>
+                              </div>
+                              <!-- Group of default radios - option 3 -->
+                              <div class="custom-control custom-radio">
+                                 <input type="radio" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios">
+                                 <label class="custom-control-label" for="defaultGroupExample3">Other</label>
+                              </div>
+                           </div>
+                           <!-- Default input -->
+                           <div class="form-group col-md-4">
+                              <label for="inputOccupation">Gender</label>
+                              <!-- Group of default radios - option 1 -->
+                              <div class="custom-control custom-radio">
+                                 <input type="radio" class="custom-control-input" id="defaultGroupExample4" name="groupOfDefaultRadios2">
+                                 <label class="custom-control-label" for="defaultGroupExample4">Male</label>
+                              </div>
+                              <!-- Group of default radios - option 2 -->
+                              <div class="custom-control custom-radio">
+                                 <input type="radio" class="custom-control-input" id="defaultGroupExample5" name="groupOfDefaultRadios2">
+                                 <label class="custom-control-label" for="defaultGroupExample5">Female</label>
+                              </div>
+                           </div>
+                           <div class="form-group col-md-4">
+                              <label for="inputNumberOfDependent">Number of dependent(s)</label>
+                              <input type="text" class="form-control" id="inputNumberOfDependent" placeholder="">
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <!-- Default input -->
+                           <div class="form-group col-md-6">
+                              <label for="inputDateOfBirth">Date of Birth</label>
+                              <input class="form-control" id="birthpicker" name="date" placeholder="mm/dd/yyyy"/ type="date">
+                           </div>
+                           <!-- Default input -->
+                           <div class="form-group col-md-6">
+                              <label for="inputPlaceOfBirth">Place of Birth</label>
+                              <input type="text" class="form-control" id="inputPlaceOfBirth   " placeholder="Place of birth">
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <!-- Default input -->
+                           <div class="form-group col-md-6">
+                              <label for="inputFatherName">Father's Name</label>
+                              <input type="text" class="form-control" id="inputFatherName" placeholder="Father's name">
+                           </div>
+                           <!-- Default input -->
+                           <div class="form-group col-md-6">
+                              <label for="inputMotherName">Mother's Maiden Name</label>
+                              <input type="text" class="form-control" id="inputMotherName" placeholder="Mother's maiden name">
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <!-- Default input -->
+                           <div class="form-group col-md-8">
+                              <label for="inputRelativeName">Name of Nearest Relative In Case of Emergency</label>
+                              <input type="text" class="form-control" id="inputRelativeName" placeholder="Relative's Name">
+                           </div>
+                           <!-- Default input -->
+                           <div class="form-group col-md-4">
+                              <label for="inputRelationship">Relationship</label>
+                              <input type="text" class="form-control" id="inputRelationship" placeholder="Relationship">
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <!-- Default input -->
+                           <div class="form-group col-md-8">
+                              <label for="inputAddress">Address</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="Address of Relative">
+                           </div>
+                           <!-- Default input -->
+                           <div class="form-group col-md-4">
+                              <label for="inputMobileNumber">Mobile Number</label>
+                              <input type="text" class="form-control" id="inputMobileNumber" placeholder="Relative's Mobile Number" value="(+63)">
+                           </div>
+                        </div>
+                        <div class="form-row">
+                           <!-- Default input -->
+                           <div class="form-group col-md-6">
+                              <label for="inputAddress">Means of support for the duration of the study</label>
+                              <div class="custom-control custom-radio">
+                                 <input type="radio" class="custom-control-input" id="defaultGroupExample6" name="groupOfDefaultRadios3">
+                                 <label class="custom-control-label" for="defaultGroupExample6">Self-funded</label>
+                              </div>
+                              <!-- Group of default radios - option 2 -->
+                              <div class="custom-control custom-radio">
+                                 <input type="radio" class="custom-control-input" id="defaultGroupExample7" name="groupOfDefaultRadios3">
+                                 <label class="custom-control-label" for="defaultGroupExample7">Scholarship</label>
+                              </div>
+                              <!-- Group of default radios - option 2 -->
+                              <div class="custom-control custom-radio">
+                                 <input type="radio" class="custom-control-input" id="defaultGroupExample8" name="groupOfDefaultRadios3">
+                                 <label class="custom-control-label" for="defaultGroupExample8">Others</label>
+                              </div>
+                           </div>
+                           <!-- Default input -->
+                           <div class="form-group col-md-6">
+                              <label for="inputMobileNumber">Specifically</label>
+                              <input type="text" class="form-control" id="inputMobileNumber" placeholder="If scholarship or others, specify" disabled>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label for="extracurricularTable">Collegiate extracurricular activities, in order of importance to you</label>
+                           <table class="table table-bordered text-center" id="extracurricularTable">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">Organization</th>
+                                    <th scope="col">Position</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col">End Date</th>
+                                    <th scope="col">Remove</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <button class="btn btn-primary btn-sm float-right addExtraButton" class="addExtraButton" onclick="addRowFunc('extracurricularTable')"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add</button>
+                        </div>
+                        <div class="form-group">
+                           <label id="forSpacing" for="profExamTable">Professional and Civil Service Examinations taken</label>
+                           <table class="table table-bordered text-center" id="profExamTable">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">Title of Examination</th>
+                                    <th scope="col">Date Taken</th>
+                                    <th scope="col">Rating</th>
+                                    <th scope="col">Remove</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <button class="btn btn-primary btn-sm float-right addExtraButton" class="addExtraButton" onclick="addRowFunc('profExamTable')"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add</button>
+                        </div>
+                     </div>
+                     <!-- END OF TAB 1 -->
+                     <!-- START OF TAB 2 -->
+                     <div class="tab">
+                        <div class="form-group">
+                           <label id="forSpacing2" for="inputEducTable">Education Attainment</label>
+                           <table class="table table-bordered text-center" id="inputEducTable">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">Institution/Schools attended</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col">End Date</th>
+                                    <th scope="col">Major/Minor Fields</th>
+                                    <th scope="col">Highest Degree Conferred</th>
+                                    <th scope="col">Date Conferred</th>
+                                    <th scope="col">Remove</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <button class="btn btn-primary btn-sm float-right addExtraButton" class="addExtraButton" onclick="addRowFunc('inputEducTable')"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add</button>
+                        </div>
+                        <div class="form-group">
+                           <label id="forSpacing" for="specTrainingTable">Other special training or education received</label>
+                           <table class="table table-bordered text-center" id="specTrainingTable">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">Title/Nature of Training</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col">End Date</th>
+                                    <th scope="col">Training Institution</th>
+                                    <th scope="col">Remove</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <button class="btn btn-primary btn-sm float-right addExtraButton" class="addExtraButton" onclick="addRowFunc('specTrainingTable')"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add</button>
+                        </div>
+
+                        <div class="form-group">
+                           <label id="forSpacing" for="scholarshipTable">Scholarship(s) Received</label>
+                           <table class="table table-bordered text-center" id="scholarshipTable">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">Title/Nature of Scholarship</th>
+                                    <th scope="col">Awarding Institution</th>
+                                    <th scope="col">Date of Award</th>
+                                    <th scope="col">Place of Award</th>
+                                    <th scope="col">Remove</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <button class="btn btn-primary btn-sm float-right addExtraButton" class="addExtraButton" onclick="addRowFunc('scholarshipTable')"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add</button>
+                        </div>
+                        <div class="form-group">
+                           <label id="forSpacing" for="awardsTable">Distinction, Honors, or Awards Received</label>
+                           <p class="grey-text" id="sub-text">( academic, extracurricular, business, government service, community or others )</p>
+                           <table class="table table-bordered text-center" id="awardsTable">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">Title of Award</th>
+                                    <th scope="col">Award Institution</th>
+                                    <th scope="col">Remove</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <button class="btn btn-primary btn-sm float-right addExtraButton" class="addExtraButton" onclick="addRowFunc('awardsTable')"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add</button>
+                        </div>
+                     </div>
+                     <!-- END OF TAB 2 -->
+                     <!-- START OF TAB 3 -->
+                     <div class="tab">
+                        <div class="form-group">
+                           <label id="forSpacing2" for="profExpTable">Present Professional Experience
+                           <button id="informationButton" title="at least 1"><i class="fa fa-info"></i></button> 
+                           </label>
+                           <table class="table table-bordered text-center" id="profExpTable">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">Brief Description of Responsibility</th>
+                                    <th scope="col">Institution</th>
+                                    <th scope="col">Address</th>
+                                    <th scope="col">Telephone Number(s)</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col">End Date</th>
+                                    <th scope="col">Remove</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <button class="btn btn-primary btn-sm float-right addExtraButton" class="addExtraButton" onclick="addRowFunc('profExpTable')"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add</button>
+                        </div>
+
+                        <div class="form-group">
+                           <label id="forSpacing" for="prevProfTable">Previous Professional Experience
+                           <button id="informationButton" title="at least 1"><i class="fa fa-info"></i></button> 
+                           </label>
+                           <table class="table table-bordered text-center" id="prevProfTable">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">Brief Description of Responsibility</th>
+                                    <th scope="col">Institution</th>
+                                    <th scope="col">Address</th>
+                                    <th scope="col">Telephone Number(s)</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col">End Date</th>
+                                    <th scope="col">Remove</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <button class="btn btn-primary btn-sm float-right addExtraButton" class="addExtraButton" onclick="addRowFunc('prevProfTable')"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add</button>
+                        </div>
+
+                        <div class="form-group">
+                           <label id="forSpacing" for="profArticleTable">Professional Articles and Publications
+                           <button id="informationButton" title="at least 1"><i class="fa fa-info"></i></button> 
+                           </label>
+                           <table class="table table-bordered text-center" id="profArticleTable">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">Title of Publication</th>
+                                    <th scope="col">Journal/Magazine</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Remove</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <button class="btn btn-primary btn-sm float-right addExtraButton" class="addExtraButton" onclick="addRowFunc('profArticleTable')"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add</button>
+                        </div>
+
+                        <div class="form-group">
+                           <label id="forSpacing" for="orgsTable">Membership in Professional and Community Organizations
+                           <button id="informationButton" title="at least 1"><i class="fa fa-info"></i></button> 
+                           </label>
+                           <table class="table table-bordered text-center" id="orgsTable">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">Organization</th>
+                                    <th scope="col">Nature of Organization</th>
+                                    <th scope="col">Position Held</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col">End Date</th>
+                                    <th scope="col">Remove</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <button class="btn btn-primary btn-sm float-right addExtraButton" class="addExtraButton" onclick="addRowFunc('orgsTable')"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add</button>
+                        </div>
+                        <div class="form-group">
+                           <label id="forSpacing" for="inputSpecialTraining">Leadership Qualities and Experience
+                           <button id="informationButton" title="at least 1"><i class="fa fa-info"></i></button> 
+                           </label>
+                           <p class="grey-text" id="sub-text">( Please describe one or two situations in which you felt your leadership skills were tested and
+                              appreciated. These situations may be taken from family, school, business and community life. Explain briefly what significant lessons
+                              you learned from the experience. )
+                           </p>
+                           <div class="md-form mb-4 pink-textarea active-pink-textarea">
+                              <!-- <i class="fas fa-angle-double-right prefix" id="informationButton"></i> -->
+                              <textarea class="form-control" id="FormControlTextarea3" rows="5"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- END OF TAB 3 -->
+                     <!-- START OF TAB 4 -->
+                     <div class="tab">
+                        <div class="form-group">
+                           <label id="forSpacing2" for="inputSpecialTraining">Career Preferences
+                           <button id="informationButton" title=""><i class="fa fa-info"></i></button> 
+                           </label>
+                           <p class="grey-text" id="sub-text">( Discuss briefly the vocation or profession, other than management, which you may have seriously considered
+                              and state the corresponding reasons therein. )
+                           </p>
+                           <div class="md-form mb-4 pink-textarea active-pink-textarea">
+                              <textarea class="form-control" id="FormControlTextarea3" rows="5"></textarea>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label id="forSpacing2" for="refTable">References
+                           <button id="informationButton" title="Emails will be sent to your references."><i class="fa fa-info"></i></button> 
+                           </label>
+                           <p class="grey-text" id="sub-text">( List down the names and addresses of your present and previous employers and professors you have requested to be
+                              your referees. Request them to fill out the Recommendation for Admission. Please note that the evaluation forms should be mailed
+                              directly by them to the Dean, School of Management, University of the Philippines Cebu, Gorordo Avenue, Lahug, Cebu City. It is your
+                              responsibility to check with your references to assure prompt submission of their recommendations. )
+                           </p>
+                           <table class="table table-bordered text-center" id="refTable">
+                              <thead>
+                                 <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Position</th>
+                                    <th scope="col">Institution</th>
+                                    <th scope="col">Address</th>
+                                    <th scope="col">Remove</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                                 <tr>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td contenteditable='true'></td>
+                                    <td><button class="removeButton"><i class="fa fa-trash"></i></button></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <button class="btn btn-primary btn-sm float-right addExtraButton" class="addExtraButton" onclick="addRowFunc('refTable')"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp; Add</button>
+                        </div>
+                        <div class="form-group">
+                           <label id="forSpacing" for="inputSpecialTraining">Other information
+                           <button id="informationButton" title=""><i class="fa fa-info"></i></button> 
+                           </label>
+                           <p class="grey-text" id="sub-text">( Discuss any matter other than the items of information already requested,
+                              which you believe will strengthen your application for admissions to the Master of Business Administration. )
+                           </p>
+                           <div class="md-form mb-4 pink-textarea active-pink-textarea">
+                              <textarea class="form-control" id="FormControlTextarea3" rows="5"></textarea>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label id="forSpacing2" for="inputSpecialTraining">Purpose
+                           <button id="informationButton" title="in 150-200 words, Arial font size 11, 1.5 spacing),"><i class="fa fa-info"></i></button> 
+                           </label>
+                           <p class="grey-text" id="sub-text">( State your purpose in pursuing the degree Master of Business
+                              Administration in UP Cebu. )
+                           </p>
+                           <div class="md-form mb-4 pink-textarea active-pink-textarea">
+                              <!-- <i class="fas fa-angle-double-right prefix" id="informationButton"></i> -->
+                              <textarea class="form-control" id="FormControlTextarea3" rows="5"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+                  <!-- END OF TAB 4 -->
+               </div>
+               <!-- FORM ENDS HERE -->
+               <div id="sticky_div" class="col-md-2 text-center" data-slide="next" href="#section_one">
+                  <button class="btn btn-primary" id="next_btn" onclick="nextPrev(1)"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+               </div>
+            </div>
+         </section>
+      </main>
+      <div class="col-md-12">
+         <div id="steps" style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="step"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="step"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="step"></span>
+         </div>
+      </div>
+      <script src="questionnaire.js"></script>
+   </body>
+</html>
